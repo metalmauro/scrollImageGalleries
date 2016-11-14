@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollingView;
 
 @end
 
@@ -16,13 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //
+    self.scrollingView.pagingEnabled = NO;
+    self.scrollingView.contentSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height);
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"Content offset is now: %f, %f", scrollView.contentOffset.x, scrollView.contentOffset.y);
 }
 
 
