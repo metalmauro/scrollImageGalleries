@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Tt-ey-2xl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -7,6 +7,57 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="9VJ-3v-NY2">
+            <objects>
+                <viewController id="2Tt-ey-2xl" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yGM-Tq-Zlh"/>
+                        <viewControllerLayoutGuide type="bottom" id="fb5-iu-eFF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4db-45-dD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohh-Cl-P8Y">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6686.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-uq-pmK"/>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qCo-uq-pmK" secondAttribute="bottom" id="57R-RO-bOf"/>
+                                    <constraint firstItem="qCo-uq-pmK" firstAttribute="top" secondItem="Ohh-Cl-P8Y" secondAttribute="top" id="M0d-hX-Kkn"/>
+                                    <constraint firstItem="qCo-uq-pmK" firstAttribute="leading" secondItem="Ohh-Cl-P8Y" secondAttribute="leading" id="ReM-9u-jfq"/>
+                                    <constraint firstItem="qCo-uq-pmK" firstAttribute="width" secondItem="Ohh-Cl-P8Y" secondAttribute="width" id="V32-E3-nUY"/>
+                                    <constraint firstAttribute="trailing" secondItem="qCo-uq-pmK" secondAttribute="trailing" id="hi6-P8-shY"/>
+                                    <constraint firstItem="qCo-uq-pmK" firstAttribute="height" secondItem="Ohh-Cl-P8Y" secondAttribute="height" id="paY-OG-oCu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2Tt-ey-2xl" id="fA5-4A-QmD"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Ohh-Cl-P8Y" firstAttribute="leading" secondItem="4db-45-dD1" secondAttribute="leadingMargin" id="Tp4-rt-t4T"/>
+                            <constraint firstItem="Ohh-Cl-P8Y" firstAttribute="trailing" secondItem="4db-45-dD1" secondAttribute="trailingMargin" id="XYl-eG-5CD"/>
+                            <constraint firstItem="fb5-iu-eFF" firstAttribute="top" secondItem="Ohh-Cl-P8Y" secondAttribute="bottom" id="ZPI-W5-aEQ"/>
+                            <constraint firstItem="Ohh-Cl-P8Y" firstAttribute="top" secondItem="yGM-Tq-Zlh" secondAttribute="bottom" id="o07-gj-eGt"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0Eh-8j-b47" appends="YES" id="Tbj-M4-htE"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="scrollingView" destination="Ohh-Cl-P8Y" id="tYZ-5J-vnK"/>
+                        <outlet property="skydomeImgView" destination="qCo-uq-pmK" id="b2J-hC-j08"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdw-ge-z90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="0Eh-8j-b47"/>
+            </objects>
+            <point key="canvasLocation" x="-773.60000000000002" y="122.78860569715144"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -66,6 +117,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IMG_6686.jpg" width="8168" height="3130"/>
         <image name="Lighthouse-1.jpg" width="900" height="1800"/>
         <image name="Lighthouse-in-Field.jpg" width="1920" height="1080"/>
         <image name="Lighthouse-night.jpg" width="1600" height="1200"/>

@@ -16,6 +16,7 @@
 		9554765C1DDA5C7200D04AD8 /* Lighthouse-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 955476591DDA5C7200D04AD8 /* Lighthouse-1.jpg */; };
 		9554765D1DDA5C7200D04AD8 /* Lighthouse-in-Field.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9554765A1DDA5C7200D04AD8 /* Lighthouse-in-Field.jpg */; };
 		9554765E1DDA5C7200D04AD8 /* Lighthouse-night.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9554765B1DDA5C7200D04AD8 /* Lighthouse-night.jpg */; };
+		9562F1E91DDA6F5200817B10 /* IMG_6686.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9562F1E81DDA6F5200817B10 /* IMG_6686.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		955476591DDA5C7200D04AD8 /* Lighthouse-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-1.jpg"; sourceTree = "<group>"; };
 		9554765A1DDA5C7200D04AD8 /* Lighthouse-in-Field.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-in-Field.jpg"; sourceTree = "<group>"; };
 		9554765B1DDA5C7200D04AD8 /* Lighthouse-night.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lighthouse-night.jpg"; sourceTree = "<group>"; };
+		9562F1E81DDA6F5200817B10 /* IMG_6686.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_6686.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				955476591DDA5C7200D04AD8 /* Lighthouse-1.jpg */,
 				9554765A1DDA5C7200D04AD8 /* Lighthouse-in-Field.jpg */,
+				9562F1E81DDA6F5200817B10 /* IMG_6686.jpg */,
 				9554765B1DDA5C7200D04AD8 /* Lighthouse-night.jpg */,
 				955476411DDA541C00D04AD8 /* scrollImageGalleries */,
 				955476401DDA541C00D04AD8 /* Products */,
@@ -153,6 +156,7 @@
 				9554764F1DDA541C00D04AD8 /* Assets.xcassets in Resources */,
 				9554764D1DDA541C00D04AD8 /* Main.storyboard in Resources */,
 				9554765D1DDA5C7200D04AD8 /* Lighthouse-in-Field.jpg in Resources */,
+				9562F1E91DDA6F5200817B10 /* IMG_6686.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +326,7 @@
 				955476581DDA541C00D04AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
